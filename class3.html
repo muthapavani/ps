@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let amount=prompt("enter the amount: ")
+if(amount<=250000){
+    console.log( "no tax")
+}
+else if(amount>250000 && amount<=500000 ){
+    tax=(amount-250000)*0.05
+    console.log("tax amount",tax)
+}
+else if(amount>500000 && amount<=1000000){
+    tax=12500+(amount-500000)*0.20
+    console.log("tax amount",tax)
+}
+else if(amount>1000000){
+    tax=112500+(amount-1000000)*0.30
+}
+else{
+    console.log("out of amount")
+}
+
+
+
+const weight=prompt("enter the weight :")
+const destination=prompt("enter local or national or international: ")
+
+   if(weight<=1){
+     if(destination=="locals"){
+         console.log("shipping cost : 5rs")
+     }
+     else if(destination=="national"){
+         console.log("shipping cost : 8rs")
+     }
+     else{
+         console.log("shipping cost : 15rs")
+     }
+     }
+     else if(weight>1 && weight<=5){
+     if(destination=="local"){
+         console.log("shipping cost :10rs")
+         
+     }
+     else if(destination=="national"){
+         console.log("shipping cost :15rs")
+     }
+     else{
+         console.log("shipping cost :30rs")
+     }
+     }
+     else if(weight>5 && weight<=10){
+         if(destination=="local"){
+         console.log("shipping cost :20rs")
+         
+     }
+     else if(destination=="national"){
+         console.log("shipping cost :25rs")
+     }
+     else{
+         console.log("shipping cost :50rs")
+     }
+         
+     }
+     else if(weight>10){
+         if(destination=="local"){
+         console.log("shipping cost :30rs")
+         
+     }
+     else if(destination=="national"){
+         console.log("shipping cost :35rs")
+     }
+     else{
+         console.log("shipping cost :70rs")
+     }
+     }
+     else{
+         console.log("out of weight")
+     }
+
+     
+    //   electicity bill
+     const units=prompt("enter the units : ")
+     if(units<=100){
+         console.log("total bill" ,units*1)
+     }else if(units>100 && units<=300){
+         console.log(" total bill:" ,100*1+(units-100)*1.5)
+     }else if(units>300){
+         console.log("total bill: ", 100*1+200*1.5+(units-300)*2)
+     }
+     else{
+         console.log("not units")
+     }
+     
+    </script>
+</html>
