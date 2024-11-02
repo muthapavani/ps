@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // arm strong number
+
+        let num= prompt("enter the number")
+        sum=0;
+        i=num
+        count=num.length
+
+        do{
+           r = i%10
+           sum=sum+r**count
+           i= Math.floor(i/10)
+            
+        }while(i>0)
+        if(num==sum){
+          console.log( num, " is armstrong number")
+        }
+        else{
+            console.log( num ,"not an armstrong number")
+        }
+
+
+        // prime number or not
+        let numb=prompt("enter the number")
+        let n=2
+        if(numb<2){
+                console.log(numb ," is not a prime")
+            }
+        do{
+            if(numb==2){
+                console.log(numb ,"prime number")
+            }
+            else if(numb%n==0){
+                console.log(numb ," not a prime number")
+                break
+            }
+            n++
+            if(n==numb){
+                console.log(numb ,"  prime number")
+            }
+        
+            
+        }while(numb>n)
+
+        
+        // count the digits in a number
+        let number=prompt("enter the number")
+        count=0;
+        do{
+            rem=number%10
+            count=count+1
+            number=Math.floor(number/10)
+            
+        }while(number>0)
+        console .log(count, " digis ")
+    </script>
+    
+</body>
+</html>
