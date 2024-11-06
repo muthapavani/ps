@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    
+// occurances
+
+  const arr1=[1,2,3,1,2,3,5,6,3,4,5,6]
+  let obj={}
+   function occur(obj){
+   for(var i=0;i<arr1.length;i++){
+   obj[arr1[i]]=0  
+   for(j=0;j<arr1.length;j++){
+    if(arr1[i]==arr1[j]){
+       obj[arr1[i]]+=1
+    }
+    }
+    }
+     return obj
+     }
+     console.log(occur(obj))
+
+// remove duplicate values
+
+const arr=[1,7,3,21,5,1,2,4,3,5,2,8]
+new_arr=[]
+function duparr(arr){
+c=0
+k=0
+for(i=0;i<arr.length;i++){
+    c=0
+    for(j=0;j<new_arr.length;j++){
+        if(arr[i]==new_arr[j]){
+            c=1
+        }
+    }
+    if(c==0){
+        new_arr[k]=arr[i]
+        k++
+    }
+    
+}
+return new_arr
+}
+console.log(duparr(arr))
+
+// occurances
+const arry=[1,2,3,1,2,3,5,6,3,4,5,6]
+    let obj1={}
+    function occurance(ar){
+  for(i=0;i<arry.length;i++){
+   if(obj1[arry[i]]){
+       obj1[arry[i]]+=1
+   }
+   else{
+        obj1[arry[i]]=1
+   }
+  }
+  return obj1
+}
+console.log(occurance(obj1))
+
+    </script>
+</body>
+</html>
