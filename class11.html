@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // find  maximun subarray
+
+        
+function maxsubarr(arr){
+    finalarr=[]
+     
+    for(i=0;i<arr.length;i++){
+        for(j=i;j<arr.length;j++){
+            subarr=[]
+            for(k=i;k<=j;k++){
+             subarr.push(arr[k])
+            }
+            
+                finalarr.push(subarr)
+             
+            }
+           
+      }
+      maxarr=finalarr[0];
+      for(m=0;m<finalarr.length;m++){
+      if(finalarr[m].length>=maxarr.length){
+         maxarr=finalarr[m]
+     
+      }
+       }
+       console.log(finalarr)   
+       return maxarr
+         }
+       arr=[1,2,3]
+       console.log(maxsubarr(arr))
+    </script>
+</body>
+</html>
