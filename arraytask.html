@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // sub array to array remove duplicates and sum of final array
+        arr=[[1,2],[1,5],[4,5],[6,8,6],[7,3,2]]
+    function array(arr){
+    final=[]
+    for(i=0;i<arr.length;i++){
+        for(j=0;j<arr[i].length;j++){
+            final.push(arr[i][j])
+        }
+    }
+    console.log(final)
+   let arr1=[]
+    sum=0
+    for(k=0;k<final.length;k++){
+           c=0
+        for(l=0;l<arr1.length;l++){
+            if(arr1[l]==final[k]){
+                c=1
+            }
+        }
+        if(c==0){
+            arr1.push(final[k])
+            sum=sum+final[k]
+        }
+    }
+    console.log(arr1)
+    return sum
+}
+console.log(array(arr))
+    </script>
+</body>
+</html>
